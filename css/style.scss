@@ -1,0 +1,64 @@
+// Variables
+
+$primary-font: "Arial", sans-serif;
+$primary-color: #4e82be;
+$white-color: #fff;
+$black-color: #000;
+
+@mixin flex-property {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+html {
+  font-size: 15px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4% 4%;
+}
+
+.flex-box {
+  @include flex-property();
+}
+
+.more {
+  width: 100px;
+  height: 45px;
+  border: 0;
+  background-color: $primary-color;
+  color: $white-color;
+  font-family: $primary-font;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+// Header Starts
+@import "header";
+// Header Ends
+
+// Info Section Starts
+@import "info-section";
+// Info section ends
+
+// Testimonial Starts
+@import "testimonial";
+// Testimonial Ends
+
+// Image gallery starts
+@import "image-gallery";
+// Image-Gallery Ends
+
+// Footer starts
+@import "footer";
+// Footer Ends
